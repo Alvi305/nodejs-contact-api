@@ -1,6 +1,6 @@
 const { constants } = require("../constants")
 
-const errorHandler = (err, req, res, next) => {  // 4 params!
+const errorHandler = (err, req, res) => {  // 4 params!
     const statusCode = err.statusCode || 500;
     res.status(statusCode);
 
